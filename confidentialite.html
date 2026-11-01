@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Senso – Confidentialité</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout : une colonne de lecture, en-tête sobre aux couleurs de l'icône, sections FR puis EN */
+:root {
+  --bg: #f6f7fb; --fg: #1d2033; --muted: #5a5f78; --line: #dfe2ee;
+  --accent: #3a2caa; --accent2: #12a99f; --panel: #ffffff;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12131c; --fg: #e8e9f2; --muted: #a2a6bf; --line: #2a2d40;
+  --accent: #9d93ff; --accent2: #3fd1c5; --panel: #1a1c29; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12131c; --fg: #e8e9f2; --muted: #a2a6bf; --line: #2a2d40;
+  --accent: #9d93ff; --accent2: #3fd1c5; --panel: #1a1c29; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); padding: 32px 16px 64px; }
+.wrap { max-width: 42rem; margin: 0 auto; display: grid; gap: 28px; }
+header { display: grid; gap: 8px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 12px; }
+.mark { width: 44px; height: 44px; border-radius: 11px; flex: none;
+  background: linear-gradient(135deg, #3a2caa, #12a99f); display: grid; place-items: center; }
+h1 { font: 600 2rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 1.25rem/1.3 var(--display); margin: 0 0 6px; color: var(--accent); }
+.meta { color: var(--muted); font-size: .92rem; margin: 0; }
+nav { display: flex; gap: 10px; flex-wrap: wrap; }
+nav a { color: var(--accent); font-weight: 600; text-decoration: none; border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 14px; font-size: .9rem; }
+nav a:focus-visible, a:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+section { display: grid; gap: 18px; }
+.lang { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent2); font-weight: 600; }
+.summary { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.summary p { margin: 0; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: grid; gap: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.table { overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+.contact { font-weight: 600; user-select: all; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 8px 0; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="1.5"/><path d="M13 3 L15.5 13 L13 12 L10.5 13 Z" fill="#ff7070"/><path d="M13 23 L15.5 13 L13 14 L10.5 13 Z" fill="#fff"/></svg>
+      </div>
+      <h1>Senso – Politique de confidentialité</h1>
+    </div>
+    <p class="meta">Application iPhone éditée par Paul Knill · Mise à jour le 1er novembre 2026</p>
+    <nav><a href="#fr">Français</a><a href="#en">English</a></nav>
+  </header>
+
+  <section id="fr">
+    <span class="lang">Français</span>
+    <div class="summary"><p><strong>En bref :</strong> Senso ne collecte aucune donnée personnelle. Il n'y a ni compte, ni publicité, ni pistage, ni outil de statistiques. Les mesures des capteurs restent sur votre iPhone.</p></div>
+
+    <div><h2>Ce que fait Senso</h2>
+    <p>Senso réunit des outils de mesure qui utilisent les capteurs de l'iPhone : boussole, niveau, inclinomètre, altimètre, baromètre, compteur de vitesse, cockpit, sonomètre, luxmètre, lampe, détecteur de métaux, sismomètre, LiDAR, ainsi que la météo, la qualité de l'air et des capteurs Bluetooth personnels.</p></div>
+
+    <div><h2>Autorisations demandées et usage</h2>
+    <div class="table"><table>
+      <tr><th>Autorisation</th><th>Usage</th><th>Ce qui quitte l'iPhone</th></tr>
+      <tr><td>Localisation</td><td>Nord vrai de la boussole, altitude, compteur de vitesse, météo, qualité de l'air et limites de vitesse</td><td>Votre position envoyée aux services de météo et de cartographie, sans identifiant, voir plus bas</td></tr>
+      <tr><td>Micro</td><td>Sonomètre : analyse du niveau sonore en direct</td><td>Rien. Aucun son n'est enregistré.</td></tr>
+      <tr><td>Caméra</td><td>Luxmètre, viseur de l'inclinomètre, LiDAR</td><td>Rien. Aucune image n'est enregistrée.</td></tr>
+      <tr><td>Mouvements et forme</td><td>Niveau, inclinomètre, baromètre, altimètre, cockpit, sismomètre</td><td>Rien</td></tr>
+      <tr><td>Bluetooth</td><td>Lecture des mesures diffusées par vos capteurs (RuuviTag, SwitchBot, Govee), sans connexion</td><td>Rien</td></tr>
+    </table></div></div>
+
+    <div><h2>Météo et qualité de l'air</h2>
+    <p>Pour afficher la météo et la qualité de l'air autour de vous, Senso envoie votre position, arrondie à environ 100 mètres, à un fournisseur de données météorologiques (Open-Meteo, données Copernicus CAMS, ou WeatherKit d'Apple selon la version). Cette requête ne contient aucun identifiant personnel ni aucune information de compte. Elle sert uniquement à renvoyer les données de votre secteur.</p></div>
+
+    <div><h2>Limites de vitesse</h2>
+    <p>Si vous activez la détection automatique des limites de vitesse (Senso Pro), Senso envoie votre position précise, au plus une fois tous les 150 mètres, au service public Overpass d'OpenStreetMap, pour connaître la limite de la route où vous roulez. La requête ne contient aucun identifiant. Le compteur de vitesse lui-même fonctionne entièrement sur l'iPhone. Données cartographiques © contributeurs OpenStreetMap.</p></div>
+
+    <div><h2>Données stockées sur l'iPhone</h2>
+    <ul>
+      <li>Vos réglages : étalonnages, sensibilité, préférences d'affichage.</li>
+      <li>Les noms que vous donnez à vos capteurs Bluetooth.</li>
+      <li>L'historique récent de la pression atmosphérique, pour le widget et la tendance.</li>
+      <li>Les fichiers que vous exportez vous-même, comme un scan 3D au format STL.</li>
+    </ul>
+    <p>Ces données restent sur votre appareil et disparaissent si vous supprimez l'application.</p></div>
+
+    <div><h2>Achats</h2>
+    <p>L'achat de Senso Pro est traité entièrement par Apple via l'App Store. Senso ne reçoit jamais vos coordonnées bancaires ni votre identité.</p></div>
+
+    <div><h2>Enfants</h2>
+    <p>Senso ne collecte aucune donnée, y compris auprès des enfants.</p></div>
+
+    <div><h2>Modifications</h2>
+    <p>En cas de changement, cette page sera mise à jour et la date indiquée en haut modifiée.</p></div>
+
+    <div><h2>Contact</h2>
+    <p>Pour toute question : <a class="contact" href="mailto:sensoapp88@gmail.com">sensoapp88@gmail.com</a></p></div>
+  </section>
+
+  <hr>
+
+  <section id="en">
+    <span class="lang">English</span>
+    <div class="summary"><p><strong>In short:</strong> Senso collects no personal data. No account, no ads, no tracking, no analytics. Sensor readings stay on your iPhone.</p></div>
+
+    <div><h2>What Senso does</h2>
+    <p>Senso brings together measurement tools that use the iPhone's sensors: compass, level, inclinometer, altimeter, barometer, speedometer, cockpit, sound meter, light meter, flashlight, metal detector, seismometer, LiDAR, plus local weather, air quality and your own Bluetooth sensors.</p></div>
+
+    <div><h2>Permissions and how they are used</h2>
+    <div class="table"><table>
+      <tr><th>Permission</th><th>Use</th><th>What leaves the iPhone</th></tr>
+      <tr><td>Location</td><td>True north, altitude, speedometer, weather, air quality and speed limits</td><td>Your location sent to the weather and map services, with no identifier, see below</td></tr>
+      <tr><td>Microphone</td><td>Sound meter: live level analysis</td><td>Nothing. No audio is recorded.</td></tr>
+      <tr><td>Camera</td><td>Light meter, inclinometer sight, LiDAR</td><td>Nothing. No image is recorded.</td></tr>
+      <tr><td>Motion &amp; fitness</td><td>Level, inclinometer, barometer, altimeter, cockpit, seismometer</td><td>Nothing</td></tr>
+      <tr><td>Bluetooth</td><td>Reading values broadcast by your sensors (RuuviTag, SwitchBot, Govee), without connecting</td><td>Nothing</td></tr>
+    </table></div></div>
+
+    <div><h2>Weather and air quality</h2>
+    <p>To show weather and air quality around you, Senso sends your location, rounded to about 100 metres, to a weather data provider (Open-Meteo with Copernicus CAMS data, or Apple WeatherKit depending on the version). The request contains no personal identifier or account information and is used only to return data for your area.</p></div>
+
+    <div><h2>Speed limits</h2>
+    <p>If you turn on automatic speed limit detection (Senso Pro), Senso sends your precise location, at most once every 150 metres, to OpenStreetMap's public Overpass service to look up the limit of the road you are on. The request contains no identifier. The speedometer itself runs entirely on your iPhone. Map data © OpenStreetMap contributors.</p></div>
+
+    <div><h2>Data stored on your iPhone</h2>
+    <ul>
+      <li>Your settings: calibrations, sensitivity, display preferences.</li>
+      <li>The names you give your Bluetooth sensors.</li>
+      <li>Recent air pressure history, for the widget and trend.</li>
+      <li>Files you export yourself, such as a 3D scan in STL format.</li>
+    </ul>
+    <p>This data stays on your device and is removed if you delete the app.</p></div>
+
+    <div><h2>Purchases</h2>
+    <p>Senso Pro purchases are handled entirely by Apple through the App Store. Senso never receives your payment details or identity.</p></div>
+
+    <div><h2>Children</h2>
+    <p>Senso collects no data from anyone, including children.</p></div>
+
+    <div><h2>Changes</h2>
+    <p>If this policy changes, this page will be updated along with the date at the top.</p></div>
+
+    <div><h2>Contact</h2>
+    <p>Questions: <a class="contact" href="mailto:sensoapp88@gmail.com">sensoapp88@gmail.com</a></p></div>
+  </section>
+</div>
+
+</body>
+</html>

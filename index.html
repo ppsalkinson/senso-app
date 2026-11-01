@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Senso – Assistance</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout : une colonne de lecture, en-tête sobre aux couleurs de l'icône, sections FR puis EN */
+:root {
+  --bg: #f6f7fb; --fg: #1d2033; --muted: #5a5f78; --line: #dfe2ee;
+  --accent: #3a2caa; --accent2: #12a99f; --panel: #ffffff;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12131c; --fg: #e8e9f2; --muted: #a2a6bf; --line: #2a2d40;
+  --accent: #9d93ff; --accent2: #3fd1c5; --panel: #1a1c29; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12131c; --fg: #e8e9f2; --muted: #a2a6bf; --line: #2a2d40;
+  --accent: #9d93ff; --accent2: #3fd1c5; --panel: #1a1c29; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); padding: 32px 16px 64px; }
+.wrap { max-width: 42rem; margin: 0 auto; display: grid; gap: 28px; }
+header { display: grid; gap: 8px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 12px; }
+.mark { width: 44px; height: 44px; border-radius: 11px; flex: none;
+  background: linear-gradient(135deg, #3a2caa, #12a99f); display: grid; place-items: center; }
+h1 { font: 600 2rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 1.25rem/1.3 var(--display); margin: 0 0 6px; color: var(--accent); }
+.meta { color: var(--muted); font-size: .92rem; margin: 0; }
+nav { display: flex; gap: 10px; flex-wrap: wrap; }
+nav a { color: var(--accent); font-weight: 600; text-decoration: none; border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 14px; font-size: .9rem; }
+nav a:focus-visible, a:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+section { display: grid; gap: 18px; }
+.lang { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent2); font-weight: 600; }
+.summary { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.summary p { margin: 0; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: grid; gap: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.table { overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: .85rem; }
+.contact { font-weight: 600; user-select: all; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 8px 0; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="1.5"/><path d="M13 3 L15.5 13 L13 12 L10.5 13 Z" fill="#ff7070"/><path d="M13 23 L15.5 13 L13 14 L10.5 13 Z" fill="#fff"/></svg></div>
+      <h1>Senso – Assistance</h1>
+    </div>
+    <p class="meta">14 outils de mesure pour iPhone · 14 measuring tools for iPhone</p>
+    <nav><a href="#fr">Français</a><a href="#en">English</a><a href="confidentialite.html">Confidentialité / Privacy</a></nav>
+  </header>
+  <section id="fr">
+    <span class="lang">Français</span>
+    <div class="summary"><p>Une question, un bug, une idée d'outil ? Écrivez à <a class="contact" href="mailto:sensoapp88@gmail.com">sensoapp88@gmail.com</a>. Réponse sous quelques jours.</p></div>
+    <div><h2>Questions fréquentes</h2>
+    <ul>
+      <li><strong>La boussole est imprécise :</strong> éloignez l'iPhone des objets métalliques et décrivez un 8 dans l'air pour la recalibrer.</li>
+      <li><strong>Restaurer Senso Pro :</strong> ouvrez l'écran Senso Pro et touchez « Restaurer mes achats », avec le même identifiant Apple que lors de l'achat.</li>
+      <li><strong>Le LiDAR n'apparaît pas :</strong> il nécessite un iPhone équipé d'un capteur LiDAR (modèles Pro).</li>
+      <li><strong>Les mesures sont indicatives :</strong> Senso n'est pas un instrument certifié ni un instrument de navigation.</li>
+    </ul></div>
+  </section>
+  <hr>
+  <section id="en">
+    <span class="lang">English</span>
+    <div class="summary"><p>A question, a bug, an idea for a tool? Write to <a class="contact" href="mailto:sensoapp88@gmail.com">sensoapp88@gmail.com</a>. We reply within a few days.</p></div>
+    <div><h2>FAQ</h2>
+    <ul>
+      <li><strong>The compass is off:</strong> move away from metal objects and wave the iPhone in a figure 8 to recalibrate.</li>
+      <li><strong>Restore Senso Pro:</strong> open the Senso Pro screen and tap “Restore Purchases”, signed in with the Apple ID used to buy it.</li>
+      <li><strong>LiDAR is missing:</strong> it requires an iPhone with a LiDAR sensor (Pro models).</li>
+      <li><strong>Readings are indicative:</strong> Senso is not a certified instrument or a navigation device.</li>
+    </ul></div>
+  </section>
+</div>
+</body>
+</html>
